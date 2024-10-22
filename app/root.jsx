@@ -157,7 +157,7 @@ function Root({ children }) {
         {children}
         <ScrollRestoration nonce={nonce} />
         <Scripts nonce={nonce} />
-        <LiveReload nonce={nonce} />
+        {/* <LiveReload nonce={nonce} /> */}
       </body>
     </html>
   )
