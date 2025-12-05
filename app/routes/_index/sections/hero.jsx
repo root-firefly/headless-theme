@@ -6,18 +6,30 @@ export default function Hero() {
   return (
     <section className='w-full relative min-h-8 h-svh max-h-[64rem] bg-darkGray'>
       <div className='min-h-inherit h-full mx-auto px-4 md:px-8 lg:px-10 w-full relative z-10 max-w-7xl pb-24 pt-36'>
-        <div className='w-auto min-h-inherit h-full items-start justify-between flex flex-col'>
-          <div className='w-auto h-auto gap-4 items-start justify-center flex flex-col pt-[10vh]'>
+        <div
+          className='w-auto min-h-inherit h-full items-start justify-between flex flex-col'
+          style={{
+            alignItems: 'flex-start',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            gap: 16,
+          }}
+        >
+          <div
+            className='w-auto h-auto gap-4 items-start justify-center flex flex-col pt-[10vh]'
+            style={{ width: 526, height: 349 }}
+          >
             <Text
               uppercase
-              size={6}
+              size='s'
               font='display'
               color='accent'
               className='pl-1'
+              style={{ flexGrow: 1, width: 155 }}
             >
               Summer 2024
             </Text>
-            <Heading font='text' size='8' color='white'>
+            <Heading font='text' size='5xl' color='white'>
               Building
             </Heading>
             <Heading
@@ -29,7 +41,13 @@ export default function Hero() {
               Essentials
             </Heading>
           </div>
-          <Button to='/products/builder-tote'>
+          <Button accent style={{ width: 155, height: 56 }}>
+            Sample Button
+          </Button>
+          <Button
+            to='/products/builder-tote'
+            style={{ width: 282, height: 56 }}
+          >
             Shop now
           </Button>
         </div>
@@ -39,10 +57,14 @@ export default function Hero() {
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+          width: 1440,
         }}
       >
         <div />
-        <div className='relative'>
+        <div
+          className='relative'
+          style={{ gridColumn: 'auto', gridRow: 'auto' }}
+        >
           <div className='absolute inset-0 bg-gradient-to-r from-darkGray to-transparent to-50% z-0' />
           <Image
             src='https://cdn.shopify.com/s/files/1/0657/3811/3197/files/home-hero.jpg?v=1716832320'

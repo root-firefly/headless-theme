@@ -27,14 +27,27 @@ export var storyboard = (
       data-label='Desktop'
       style={{
         position: 'absolute',
-        width: 1440,
+        width: 1332,
         height: 'max-content',
-        left: 0,
-        top: 0,
+        left: 5,
+        top: -5,
         overflow: 'hidden',
       }}
       getLoadContext={contextGetter}
       commentId='bjt'
+    />
+    <RemixScene
+      data-label='Mobile'
+      style={{
+        position: 'absolute',
+        width: 400,
+        height: 'max-content',
+        left: 1692,
+        top: -5,
+        overflow: 'hidden',
+      }}
+      getLoadContext={contextGetter}
+      commentId='83554a83-7367-41b9-b598-aefdc75f'
     />
   </Storyboard>
 )
